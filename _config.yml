@@ -17,3 +17,7 @@ github_username:  remunizz
 
 # Build settings
 markdown: kramdown
+
+#plugins
+gems:
+  - jekyll-sitemap
