@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 Allow: /sitemap.xml
-Sitemap: http://remunizz.github.io
+Sitemap: http://remunizz.github.io/sitemap.xml
