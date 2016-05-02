@@ -34,7 +34,7 @@ h1, h2, h3, h4, h5, h6,
 p, blockquote, pre,
 ul, ol, dl, figure,
 %vertical-rhythm {
-    margin-bottom: $spacing-unit / 2;
+    /* margin-bottom: $spacing-unit / 2; */
 }
 
 
@@ -91,11 +91,11 @@ h1, h2, h3, h4, h5, h6 {
  * Links
  */
 a {
-    color: $brand-color;
+    color: #FA646B;
     text-decoration: none;
 
     &:visited {
-        color: darken($brand-color, 15%);
+        color: darken(#FA646B, 30%);
     }
 
     &:hover {
