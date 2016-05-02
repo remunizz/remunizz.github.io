@@ -1,10 +1,45 @@
 ---
-layout: default
+layout: page
+list:
+ now:
+   title: Now
+   image: /assets/now-badge.svg
+   description: >
+                   <p>I am responsible for the software development of</p>
+                   <p><a href="https://www.printastico.com.br/">a cool startup</a> based in Brazil.</p>
+ lab:
+   title: Lab
+   image: /assets/lab-badge.svg
+   description: >
+                   <p>Some of my projects are: <a href="https://github.com/remunizz/open-video">babybow</a>, <a href="https://github.com/remunizz/open-video">open-video</a></p>
+                   <p>and <a href="https://github.com/remunizz/day-off">day-off</a></p>
+ blog:
+   title: Blog
+   image: /assets/blog-badge.svg
+   description: >
+                   <p>Last blog titme: Welcome to jekyll</p>
+ where:
+   title: Where am i?
+   image: /assets/where-am-i-badge.svg
+   description: >
+                   <p>social</p>
 ---
-
-<div class="home">
-
-  <h1 class="post-title">Renan Muniz</h1>
-  <h2>Software engineer</h2>
-
+<div id="wrapper" class="home">
+	<div class="home-container">
+		<ol class="list-view">
+			{% for item in page.list %}
+				<li class="list-item">
+					<div class="list-header">
+						<div class="_bubble" style="background-image: url({{ item[1].image }});"></div>
+					</div>
+					<div class="list-detail">
+						<div class="_title-block">
+							<h3>{{ item[1].title }}</h3>
+						</div>
+						{{ item[1].description }}
+					</div>
+				</li>
+			{% endfor %}
+		</ol>
+	</div>
 </div>
