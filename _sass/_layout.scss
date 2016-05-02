@@ -261,3 +261,46 @@
 		#mc_embed_signup .button {width: 100%; margin:0; }
 }
 /* End Mail Chimp */
+
+.profile {
+	h1 {
+	    font-weight: 600;
+		letter-spacing: -2px;
+		font-size: 3em;
+		color: #222;
+	}
+
+	#header {
+		border-bottom: 1px solid #eee;
+		margin-bottom: 40px;
+		padding-bottom: 40px;
+		text-align: center;
+		position: relative;
+	}
+
+	.wrapper {
+		padding: 100px 40px 0;
+	}
+}
+
+li {
+  display: table-row;
+}
+
+.list-header ._bubble{
+  width: 91px;
+  height: 91px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-top: 14px;
+  margin-right: 16px;
+}
+
+.list-view div {
+  display: inline-block;
+}
+
+.list-detail {
+    padding: 25px 0 39px;
+}
