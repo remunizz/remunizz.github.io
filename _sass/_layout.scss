@@ -303,4 +303,13 @@ li {
 
 .list-detail {
     padding: 25px 0 39px;
+    position: absolute;
+}
+
+.list-header{
+  display: inline-block;
+}
+
+._title-block{
+  display: block!important;
 }
