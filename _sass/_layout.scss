@@ -162,8 +162,6 @@
     }
 }
 
-
-
 /**
  * Page content
  */
@@ -193,8 +191,6 @@
     display: block;
     font-size: 24px;
 }
-
-
 
 /**
  * Posts
@@ -294,7 +290,6 @@
 li {
   list-style: none;
   display: block;
-  padding: 30px 0px;
 }
 
 .list-header ._bubble{
@@ -305,6 +300,10 @@ li {
   background-position: center;
   margin-top: 14px;
   margin-right: 16px;
+}
+
+.list-item {
+  padding: 30px 0px
 }
 
 .list-detail {
