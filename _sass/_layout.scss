@@ -304,6 +304,12 @@ li {
   background-position: center;
   margin-top: 14px;
   margin-right: 16px;
+
+  @include media-query($on-palm) {
+    width: 120px;
+    height: 120px;
+  }
+
 }
 
 .list-item {
@@ -314,12 +320,24 @@ li {
   display: inline-block;
   vertical-align: middle;
   padding-left: 111px;
+
+  @include media-query($on-palm) {
+    padding-left: 0;
+  }
+
 }
 
 .list-header{
   width: 107px;
   height: 111px;
   position: absolute;
+
+  @include media-query($on-palm) {
+    width: 120px;
+    margin: auto;
+    position: static;
+    }
+
 }
 
 ._title-block{
