@@ -11,7 +11,7 @@ title: Renan Muniz
 description: > # this means to ignore newlines until "baseurl:"
   Renan Muniz is a software engineer focused on mobile development, author of a few open source projects.
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "http://renanmuniz.com" # the base hostname & protocol for your site
+url: "https://renanmuniz.com" # the base hostname & protocol for your site
 twitter_username: renanmunizz
 github_username:  remunizz
 
