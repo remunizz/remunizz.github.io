@@ -1,0 +1,35 @@
+{
+  "name": "remunizz.github.io",
+  "version": "1.0.0",
+  "description": "http://renanmuniz.com",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/remunizz/remunizz.github.io.git"
+  },
+  "keywords": [
+    "jekyll",
+    "blog",
+    "site",
+    "renan",
+    "muniz",
+    "software",
+    "engineer"
+  ],
+  "author": "Renan Muniz",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/remunizz/remunizz.github.io/issues"
+  },
+  "homepage": "https://github.com/remunizz/remunizz.github.io#readme",
+  "devDependencies": {
+    "browser-sync": "^2.12.10",
+    "gulp": "^3.9.1",
+    "gulp-concat": "^2.6.0",
+    "gulp-sass": "^2.3.1",
+    "gulp-util": "^3.0.7"
+  }
+}
