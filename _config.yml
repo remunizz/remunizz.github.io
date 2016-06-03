@@ -15,6 +15,11 @@ url: "http://renanmuniz.com" # the base hostname & protocol for your site
 twitter_username: renanmunizz
 github_username:  remunizz
 
+exclude:
+  - package.json
+  - node_modules
+  - gulpfile.js
+
 about:
     description: Software engineer
 
