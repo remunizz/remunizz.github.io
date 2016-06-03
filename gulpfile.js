@@ -1,6 +1,8 @@
 const gulp = require('gulp');
 const concat = require('gulp-concat');
 const sass = require('gulp-sass');
+const cssmin = require('gulp-cssmin');
+const stripCssComments = require('gulp-strip-css-comments');
 
 const child = require('child_process');
 const gutil = require('gulp-util');
@@ -13,7 +15,9 @@ const cssFiles = '_sass/**/*.?(s)css';
 gulp.task('css', () => {
 	gulp.src(cssFiles)
 	.pipe(sass())
-	.pipe(concat('style.css'))
+	.pipe(concat('style.min.css'))
+	.pipe(stripCssComments({ all: true }))
+	.pipe(cssmin())
 	.pipe(gulp.dest('assets'))
 });
 
