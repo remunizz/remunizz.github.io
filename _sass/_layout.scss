@@ -319,6 +319,10 @@ li {
   .details {
     padding-left: 111px;
 
+   li {
+	    padding: 10px;
+	}
+
     @include media-query($on-palm) 
     {
       padding-left: 0;
