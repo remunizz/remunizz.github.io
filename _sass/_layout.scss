@@ -319,6 +319,11 @@ li {
   .details {
     padding-left: 111px;
 
+
+	div ol{
+		margin: 0px;
+	}
+
    li {
 	    padding: 10px;
 		text-align: center;
@@ -326,7 +331,7 @@ li {
 		
 		@include media-query($on-palm) 
 		{
-			width: 100px;
+			width: calc(32% - 25px);
 		}
 	}
 
