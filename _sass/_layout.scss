@@ -321,6 +321,13 @@ li {
 
    li {
 	    padding: 10px;
+		text-align: center;
+		display: inline-block;
+		
+		@include media-query($on-palm) 
+		{
+			width: 100px;
+		}
 	}
 
     @include media-query($on-palm) 
