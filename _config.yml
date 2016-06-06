@@ -8,8 +8,7 @@
 # Site settings
 title: Renan Muniz
 #email: hi@renanmuniz.com
-description: > # this means to ignore newlines until "baseurl:"
-  Renan Muniz is a software engineer focused on mobile development, author of a few open source projects.
+description: Renan Muniz is a software engineer focused on mobile development, author of a few open source projects.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://renanmuniz.com" # the base hostname & protocol for your site
 twitter_username: renanmunizz
