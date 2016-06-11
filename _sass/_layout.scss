@@ -272,7 +272,6 @@
 	  font-weight: 600;
 		letter-spacing: -2px;
 		font-size: 3em;
-		color: #222;
 
     @media only screen and (max-width: 640px){
         font-size: 2em;
@@ -309,6 +308,11 @@ li {
   @include media-query($on-palm) {
     width: 120px;
     height: 120px;
+  }
+
+  svg {
+	background-color: #eee;
+	border-radius: 71px;
   }
 
 }
