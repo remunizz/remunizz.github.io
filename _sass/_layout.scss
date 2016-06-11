@@ -112,6 +112,13 @@
 .social-media-list {
     list-style: none;
     margin-left: 0;
+
+	li{
+      @media screen and (max-width: 800px){
+        display: inline-blocK;
+        padding: 0px 10px;
+      }
+	}
 }
 
 .footer-col-wrapper {
