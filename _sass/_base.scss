@@ -12,6 +12,16 @@ p {
     line-height: 1.7;
 }
 
+input {
+    -webkit-appearance: none; /*Safari/Chrome*/
+    -moz-appearance: none; /*Firefox*/
+    -ms-appearance: none; /*IE*/
+    -o-appearance: none; /*Opera*/
+    appearance: none;
+
+    -webkit-border-radius: 0; 
+}
+
 /**
  * Basic styling
  */
