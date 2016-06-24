@@ -2,299 +2,396 @@
  * Site header
  */
 .site-header {
-    border-top: 5px solid $grey-color-dark;
-    border-bottom: 1px solid $grey-color-light;
-    min-height: 56px;
+  border-top: 5px solid $grey-color-dark;
+  border-bottom: 1px solid $grey-color-light;
+  min-height: 56px;
 
-    // Positioning context for the mobile navigation icon
-    position: relative;
+  // Positioning context for the mobile navigation icon
+  position: relative;
 }
 
 .site-title {
-    font-size: 26px;
-    font-weight: 300;
-    line-height: 56px;
-    letter-spacing: -1px;
-    margin-bottom: 0;
-    float: left;
+  font-size: 26px;
+  font-weight: 300;
+  line-height: 56px;
+  letter-spacing: -1px;
+  margin-bottom: 0;
+  float: left;
 
-    &,
-    &:visited {
-        color: $grey-color-dark;
-    }
+  &,
+  &:visited {
+    color: $grey-color-dark;
+  }
 }
 
 .site-nav {
-    float: right;
-    line-height: 56px;
+  float: right;
+  line-height: 56px;
+
+  .menu-icon {
+    display: none;
+  }
+
+  .page-link {
+    color: $text-color;
+    line-height: $base-line-height;
+
+    // Gaps between nav items, but not on the last one
+    &:not(:last-child) {
+      margin-right: 20px;
+    }
+  }
+
+  @include media-query($on-palm) {
+    position: absolute;
+    top: 9px;
+    right: $spacing-unit / 2;
+    background-color: $background-color;
+    border: 1px solid $grey-color-light;
+    border-radius: 5px;
+    text-align: right;
 
     .menu-icon {
-        display: none;
+      display: block;
+      float: right;
+      width: 36px;
+      height: 26px;
+      line-height: 0;
+      padding-top: 10px;
+      text-align: center;
+
+      > svg {
+        width: 18px;
+        height: 15px;
+
+        path {
+          fill: $grey-color-dark;
+        }
+      }
+    }
+
+    .trigger {
+      clear: both;
+      display: none;
+    }
+
+    &:hover .trigger {
+      display: block;
+      padding-bottom: 5px;
     }
 
     .page-link {
-        color: $text-color;
-        line-height: $base-line-height;
+      display: block;
+      padding: 5px 10px;
 
-        // Gaps between nav items, but not on the last one
-        &:not(:last-child) {
-            margin-right: 20px;
-        }
+      &:not(:last-child) {
+        margin-right: 0;
+      }
+      margin-left: 20px;
     }
-
-    @include media-query($on-palm) {
-        position: absolute;
-        top: 9px;
-        right: $spacing-unit / 2;
-        background-color: $background-color;
-        border: 1px solid $grey-color-light;
-        border-radius: 5px;
-        text-align: right;
-
-        .menu-icon {
-            display: block;
-            float: right;
-            width: 36px;
-            height: 26px;
-            line-height: 0;
-            padding-top: 10px;
-            text-align: center;
-
-            > svg {
-                width: 18px;
-                height: 15px;
-
-                path {
-                    fill: $grey-color-dark;
-                }
-            }
-        }
-
-        .trigger {
-            clear: both;
-            display: none;
-        }
-
-        &:hover .trigger {
-            display: block;
-            padding-bottom: 5px;
-        }
-
-        .page-link {
-            display: block;
-            padding: 5px 10px;
-
-            &:not(:last-child) {
-                margin-right: 0;
-            }
-            margin-left: 20px;
-        }
-    }
+  }
 }
-
-
 
 /**
  * Site footer
  */
 .site-footer {
-    border-top: 1px solid $grey-color-light;
-    padding: $spacing-unit 0;
+  border-top: 1px solid $grey-color-light;
+  padding: $spacing-unit 0;
 }
 
 .footer-heading {
-    font-size: 18px;
-    margin-bottom: $spacing-unit / 2;
+  font-size: 18px;
+  margin-bottom: $spacing-unit / 2;
 }
 
 .contact-list,
 .social-media-list {
-    list-style: none;
-    margin-left: 0;
+  list-style: none;
+  margin-left: 0;
 
-	li{
-      @media screen and (max-width: 800px){
-        display: inline-blocK;
-        padding: 0px 10px;
-      }
-	}
+  li {
+    @media screen and (max-width: 800px) {
+      display: inline-blocK;
+      padding: 0px 10px;
+    }
+  }
 }
 
 .footer-col-wrapper {
-    font-size: 15px;
-    color: $grey-color;
-    margin-left: -$spacing-unit / 2;
-    @extend %clearfix;
+  font-size: 15px;
+  color: $grey-color;
+  margin-left: -$spacing-unit / 2;
+  @extend %clearfix;
 }
 
 .footer-col {
-    float: left;
-    margin-bottom: $spacing-unit / 2;
-    padding-left: $spacing-unit / 2;
+  float: left;
+  margin-bottom: $spacing-unit / 2;
+  padding-left: $spacing-unit / 2;
 }
 
 .footer-col-1 {
-    width: -webkit-calc(35% - (#{$spacing-unit} / 2));
-    width:         calc(35% - (#{$spacing-unit} / 2));
+  width: -webkit-calc(35% - (#{$spacing-unit} / 2));
+  width: calc(35% - (#{$spacing-unit} / 2));
 }
 
 .footer-col-2 {
-    width: -webkit-calc(20% - (#{$spacing-unit} / 2));
-    width:         calc(20% - (#{$spacing-unit} / 2));
+  width: -webkit-calc(20% - (#{$spacing-unit} / 2));
+  width: calc(20% - (#{$spacing-unit} / 2));
 }
 
 .footer-col-3 {
-    width: -webkit-calc(80% - (#{$spacing-unit} / 2));
-    width:         calc(80% - (#{$spacing-unit} / 2));
+  width: -webkit-calc(80% - (#{$spacing-unit} / 2));
+  width: calc(80% - (#{$spacing-unit} / 2));
 }
 
 @include media-query($on-laptop) {
-    .footer-col-1,
-    .footer-col-2 {
-        width: -webkit-calc(50% - (#{$spacing-unit} / 2));
-        width:         calc(50% - (#{$spacing-unit} / 2));
-    }
+  .footer-col-1,
+  .footer-col-2 {
+    width: -webkit-calc(50% - (#{$spacing-unit} / 2));
+    width: calc(50% - (#{$spacing-unit} / 2));
+  }
 
-    .footer-col-3 {
-        width: -webkit-calc(100% - (#{$spacing-unit} / 2));
-        width:         calc(100% - (#{$spacing-unit} / 2));
-    }
+  .footer-col-3 {
+    width: -webkit-calc(100% - (#{$spacing-unit} / 2));
+    width: calc(100% - (#{$spacing-unit} / 2));
+  }
 }
 
 @include media-query($on-palm) {
-    .footer-col {
-        float: none;
-        width: -webkit-calc(100% - (#{$spacing-unit} / 2));
-        width:         calc(100% - (#{$spacing-unit} / 2));
-    }
+  .footer-col {
+    float: none;
+    width: -webkit-calc(100% - (#{$spacing-unit} / 2));
+    width: calc(100% - (#{$spacing-unit} / 2));
+  }
 }
 
 /**
  * Page content
  */
 .page-content {
-    padding: $spacing-unit 0;
+  padding: $spacing-unit 0;
 }
 
 .page-heading {
-    font-size: 20px;
+  font-size: 20px;
 }
 
 .post-list {
-    margin-left: 0;
-    list-style: none;
+  margin-left: 0;
+  list-style: none;
 
-    > li {
-        margin-bottom: $spacing-unit;
-    }
+  > li {
+    margin-bottom: $spacing-unit;
+  }
 }
 
 .post-meta {
-    font-size: $small-font-size;
-    color: $grey-color;
+  font-size: $small-font-size;
+  color: $grey-color;
 }
 
 .post-link {
-    display: block;
-    font-size: 24px;
+  display: block;
+  font-size: 24px;
 }
 
 /**
  * Posts
  */
 .post-header {
-    margin-bottom: $spacing-unit;
+  margin-bottom: $spacing-unit;
 }
 
 .post-title {
-    font-size: 42px;
-    letter-spacing: -1px;
-    line-height: 1;
+  font-size: 42px;
+  letter-spacing: -1px;
+  line-height: 1;
 
-    @include media-query($on-laptop) {
-        font-size: 36px;
-    }
+  @include media-query($on-laptop) {
+    font-size: 36px;
+  }
 }
 
 .post-content {
-    margin-bottom: $spacing-unit;
+  margin-bottom: $spacing-unit;
 
-    h2 {
-        font-size: 32px;
+  h2 {
+    font-size: 32px;
 
-        @include media-query($on-laptop) {
-            font-size: 28px;
-        }
+    @include media-query($on-laptop) {
+      font-size: 28px;
     }
+  }
 
-    h3 {
-        font-size: 26px;
+  h3 {
+    font-size: 26px;
 
-        @include media-query($on-laptop) {
-            font-size: 22px;
-        }
+    @include media-query($on-laptop) {
+      font-size: 22px;
     }
+  }
 
-    h4 {
-        font-size: 20px;
+  h4 {
+    font-size: 20px;
 
-        @include media-query($on-laptop) {
-            font-size: 18px;
-        }
+    @include media-query($on-laptop) {
+      font-size: 18px;
     }
+  }
 }
 
 /* Begin Mail Chimp */
-#mc_embed_signup form {text-align:center; padding:10px 0 10px 0;}
-.mc-field-group { display: inline-block; } /* positions input field horizontally */
+#mc_embed_signup form {
+  text-align: center;
+  padding: 10px 0 10px 0;
+}
+
+.mc-field-group {
+  display: inline-block;
+}
+
+/* positions input field horizontally */
 #mc_embed_signup input.email {
-	font-family:"Open Sans","Helvetica Neue",Arial,Helvetica,Verdana,sans-serif; font-size: 15px; border: 1px solid #ABB0B2;  -webkit-border-radius: 3px; -moz-border-radius: 3px; border-radius: 3px; color: #343434; background-color: #fff; box-sizing:border-box; height:32px; padding: 0px 0.4em; display: inline-block; margin: 0; width:350px; vertical-align:top;}
-	#mc_embed_signup label {display:block; font-size:16px; padding-bottom:10px; font-weight:bold;}
-	#mc_embed_signup .clear {display: inline-block;} /* positions button horizontally in line with input */
-	#mc_embed_signup .button {font-size: 13px; border: none; -webkit-border-radius: 3px; -moz-border-radius: 3px; border-radius: 3px; letter-spacing: .03em; color: #fff; background-color: #6D18A7; border: 1px solid; box-sizing:border-box; height:32px; line-height:32px; padding:0 18px; display: inline-block; margin: 0; transition: all 0.23s ease-in-out 0s;}
-	#mc_embed_signup .button:hover {background-color:#fff; color: #6D18A7; cursor:pointer;}
-	#mc_embed_signup div#mce-responses {float:left; top:-1.4em; padding:0em .5em 0em .5em; overflow:hidden; width:90%;margin: 0 5%; clear: both;}
-	#mc_embed_signup div.response {margin:1em 0; padding:1em .5em .5em 0; font-weight:bold; float:left; top:-1.5em; z-index:1; width:80%;}
-	#mc_embed_signup #mce-error-response {display:none;}
-	#mc_embed_signup #mce-success-response {color:#529214; display:none;}
-	#mc_embed_signup label.error {display:block; float:none; width:auto; margin-left:1.05em; text-align:left; padding:.5em 0;}
-	@media (max-width: 768px) {
-		#mc_embed_signup input.email {width:100%; margin-bottom:5px;}
-		#mc_embed_signup .clear {display: block; width: 100% }
-		#mc_embed_signup .button {width: 100%; margin:0; }
+  font-family: "Open Sans", "Helvetica Neue", Arial, Helvetica, Verdana, sans-serif;
+  font-size: 15px;
+  border: 1px solid #ABB0B2;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  color: #343434;
+  background-color: #fff;
+  box-sizing: border-box;
+  height: 32px;
+  padding: 0px 0.4em;
+  display: inline-block;
+  margin: 0;
+  width: 350px;
+  vertical-align: top;
+}
+
+#mc_embed_signup label {
+  display: block;
+  font-size: 16px;
+  padding-bottom: 10px;
+  font-weight: bold;
+}
+
+#mc_embed_signup .clear {
+  display: inline-block;
+}
+
+/* positions button horizontally in line with input */
+#mc_embed_signup .button {
+  font-size: 13px;
+  border: none;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  letter-spacing: .03em;
+  color: #fff;
+  background-color: #6D18A7;
+  border: 1px solid;
+  box-sizing: border-box;
+  height: 32px;
+  line-height: 32px;
+  padding: 0 18px;
+  display: inline-block;
+  margin: 0;
+  transition: all 0.23s ease-in-out 0s;
+}
+
+#mc_embed_signup .button:hover {
+  background-color: #fff;
+  color: #6D18A7;
+  cursor: pointer;
+}
+
+#mc_embed_signup div#mce-responses {
+  float: left;
+  top: -1.4em;
+  padding: 0em .5em 0em .5em;
+  overflow: hidden;
+  width: 90%;
+  margin: 0 5%;
+  clear: both;
+}
+
+#mc_embed_signup div.response {
+  margin: 1em 0;
+  padding: 1em .5em .5em 0;
+  font-weight: bold;
+  float: left;
+  top: -1.5em;
+  z-index: 1;
+  width: 80%;
+}
+
+#mc_embed_signup #mce-error-response {
+  display: none;
+}
+
+#mc_embed_signup #mce-success-response {
+  color: #529214;
+  display: none;
+}
+
+#mc_embed_signup label.error {
+  display: block;
+  float: none;
+  width: auto;
+  margin-left: 1.05em;
+  text-align: left;
+  padding: .5em 0;
+}
+
+@media (max-width: 768px) {
+  #mc_embed_signup input.email {
+    width: 100%;
+    margin-bottom: 5px;
+  }
+  #mc_embed_signup .clear {
+    display: block;
+    width: 100%
+  }
+  #mc_embed_signup .button {
+    width: 100%;
+    margin: 0;
+  }
 }
 
 .mail-chimp-container {
-    padding: 60px 15px;
-	background-color: #6D18A7;
-	color: #fff;
+  padding: 60px 15px;
+  background-color: #6D18A7;
+  color: #fff;
 }
 
 /* End Mail Chimp */
 
 .profile {
 
-	h1 {
-	  font-weight: 600;
-		letter-spacing: -2px;
-		font-size: 3em;
+  h1 {
+    font-weight: 600;
+    letter-spacing: -2px;
+    font-size: 3em;
 
-    @media only screen and (max-width: 640px){
-        font-size: 2em;
+    @media only screen and (max-width: 640px) {
+      font-size: 2em;
     }
-	}
+  }
 
-	#header {
-		border-bottom: 1px solid #eee;
-		margin-bottom: 40px;
-		padding-bottom: 40px;
-		text-align: center;
-		position: relative;
-	}
+  #header {
+    border-bottom: 1px solid #eee;
+    margin-bottom: 40px;
+    padding-bottom: 40px;
+    text-align: center;
+    position: relative;
+  }
 
-	.wrapper {
-		padding: 100px 40px 0;
-	}
+  .wrapper {
+    padding: 100px 40px 0;
+  }
 }
 
 li {
@@ -302,7 +399,7 @@ li {
   display: block;
 }
 
-.list-view > li .badge div{
+.list-view > li .badge div {
   width: 91px;
   height: 91px;
   background-size: cover;
@@ -317,8 +414,8 @@ li {
   }
 
   svg {
-	background-color: #eee;
-	border-radius: 71px;
+    background-color: #eee;
+    border-radius: 71px;
   }
 
 }
@@ -329,41 +426,38 @@ li {
   .details {
     padding-left: 111px;
 
+    div ol {
+      margin: 0px;
+    }
 
-	div ol{
-		margin: 0px;
-	}
+    li {
+      padding: 10px;
+      text-align: center;
+      display: inline-block;
 
-   li {
-	    padding: 10px;
-		text-align: center;
-		display: inline-block;
-		
-		@include media-query($on-palm) 
-		{
-			width: calc(32% - 25px);
-		}
-	}
+      @include media-query($on-palm) {
+        width: calc(32% - 25px);
+      }
+    }
 
-    @include media-query($on-palm) 
-    {
+    @include media-query($on-palm) {
       padding-left: 0;
     }
   }
-.badge{
-  width: 107px;
-  height: 111px;
-  position: absolute;
+  .badge {
+    width: 107px;
+    height: 111px;
+    position: absolute;
 
-  @include media-query($on-palm) {
-    width: 120px;
-    margin: auto;
-    position: static;
+    @include media-query($on-palm) {
+      width: 120px;
+      margin: auto;
+      position: static;
     }
-}
+  }
 
 }
 
-._title-block{
-  display: block!important;
+._title-block {
+  display: block !important;
 }
