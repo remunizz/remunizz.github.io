@@ -51,4 +51,10 @@
   /assets/style.min.css" | prepend : site.baseurl }}">
 
   <link href="https://fonts.googleapis.com/css?family=Questrial" rel="stylesheet">
+
+  {% if page.jsonLd %} 
+    <script type="application/ld+json">
+		{{ page.jsonLd }}
+    </script>
+  {% endif %}
 </head>
