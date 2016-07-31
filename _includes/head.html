@@ -24,8 +24,7 @@
   <meta property="og:type" content="website">
   <meta property="og:url" content="{{ site.url }}">
   <meta property="og:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}">
-  <meta property="og:description"
-        content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
+  <meta property="og:description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
   <meta property="og:image" content="{{ site.url }}/assets/profile-photo-og.jpg">
 
   <!-- Add to Favicon -->
@@ -52,9 +51,19 @@
 
   <link href="https://fonts.googleapis.com/css?family=Questrial" rel="stylesheet">
 
+  <!-- Add JSON-LD !-->
+  <script type='application/ld+json'> 
+    {
+      "@context": "http://www.schema.org",
+      "@type": "WebSite",
+      "name": "Renan Muniz",
+      "url": "https://renanmuniz.com"
+    }
+  </script>
+
   {% if page.jsonLd %} 
     <script type="application/ld+json">
-		{{ page.jsonLd }}
+	  {{ page.jsonLd }}
     </script>
   {% endif %}
 </head>
