@@ -97,21 +97,23 @@ h1, h2, h3, h4, h5, h6 {
     font-weight: $base-font-weight;
 }
 
-
+h1 {
+    color: #3d518d;
+}
 
 /**
  * Links
  */
 a {
-    color: lighten(#00e, 30%);
+    color: lighten(#e93a10, 10%);
     text-decoration: none;
 
     &:visited {
-        color: #00e;
+        color: #e93a10;
     }
 
     &:hover {
-        color: $text-color;
+        color: #e93a10;
         text-decoration: underline;
     }
 }
