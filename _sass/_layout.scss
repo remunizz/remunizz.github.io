@@ -461,7 +461,8 @@ li {
       display: inline-block;
 
       @include media-query($on-palm) {
-        width: calc(32% - 25px);
+      	width: calc(33.3% - 3px);
+      	box-sizing: border-box;
       }
     }
 
