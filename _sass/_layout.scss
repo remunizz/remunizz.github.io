@@ -218,14 +218,6 @@
 .post-content {
   margin-bottom: $spacing-unit;
 
-  h2 {
-    font-size: 32px;
-
-    @include media-query($on-laptop) {
-      font-size: 28px;
-    }
-  }
-
   h3 {
     font-size: 26px;
 
@@ -480,8 +472,4 @@ li {
     }
   }
 
-}
-
-._title-block {
-  display: block !important;
 }
