@@ -3,6 +3,7 @@ const concat = require('gulp-concat');
 const sass = require('gulp-sass');
 const cssmin = require('gulp-cssmin');
 const stripCssComments = require('gulp-strip-css-comments');
+const autoprefixer = require('gulp-autoprefixer');
 
 
 const child = require('child_process');
@@ -16,6 +17,10 @@ const cssFiles = '_sass/**/*.?(s)css';
 gulp.task('css', () => {
 	gulp.src(cssFiles)
 	.pipe(sass())
+	.pipe(autoprefixer({
+		browsers: ['last 2 versions'],
+		            cascade: false
+		}))
 	.pipe(concat('style.min.css'))
 	.pipe(stripCssComments({ all: true }))
 	.pipe(cssmin())
