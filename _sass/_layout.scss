@@ -391,7 +391,8 @@
     font-weight: 600;
     letter-spacing: -2px;
     font-size: 3em;
-    padding: 5px;
+    padding: 15px 0 0 0;
+    letter-spacing: 1px;
 
     @media only screen and (max-width: 640px) {
       font-size: 2em;
@@ -417,11 +418,9 @@ li {
 }
 
 .list-view {
-
-	  h3 {
-	      padding: 25px 0 10px 0;
-	  }
-
+  h3 {
+	padding: 25px 0 0px 0;
+  }
 }
 
 .list-view > li .badge div {
