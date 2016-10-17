@@ -10,6 +10,11 @@ collections:
     output: true
 description: Renan Muniz is a software engineer focused on mobile development, author
   of a few open source projects.
+long_description: Software engineer focused on mobile development, with 6 years
+  experience, creating systems and mobile apps for companies like Fanta, Ubisoft,
+  Light S/A, Ogilvy & Mather, SPTuris and Pearson. Creative environment experience
+  and agile methods, currently responsible for the software development of a cool
+  startup based in Brazil.    
 baseurl: ''
 url: https://renanmuniz.com
 twitter_username: renanmunizz

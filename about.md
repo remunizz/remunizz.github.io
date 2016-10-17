@@ -8,4 +8,4 @@ jsonLd: '{ "@context": "http://www.schema.org", "@type": "person", "name": "Rena
   ], "birthDate": "1990-12-17" }'
 ---
 
-{{ site.description }}
+{{ site.long_description }}
