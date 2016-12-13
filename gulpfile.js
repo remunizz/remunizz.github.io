@@ -58,7 +58,7 @@ gulp.task('serve', () => {
 	gulp.watch(cssFiles, ['css']);
 });
 
-gulp.task('default', ['css', 'jekyll', 'serve']);
+gulp.task('default', ['css', 'jekyll', 'generate-service-worker', 'serve']);
 
 gulp.task('generate-service-worker', function(callback) {
   var path = require('path');
