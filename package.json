@@ -37,6 +37,7 @@
     "gulp-strip-css-comments": "^1.2.0",
     "gulp-uglify": "^1.5.3",
     "gulp-util": "^3.0.7",
-    "gulp-watch": "^4.3.6"
+    "gulp-watch": "^4.3.6",
+    "sw-precache": "^4.2.3"
   }
 }
